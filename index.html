@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>
+            Under Construction - Initiative for Modern Tools and Standards
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            @media (prefers-color-scheme: dark) {
+                html {
+                    filter: invert(1);
+                }
+            }
+
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                margin: 0;
+                overflow: none;
+            }
+            #container {
+                text-align: center;
+                font-family: "Fragment Mono", monospace;
+                font-style: normal;
+
+                max-width: 100%;
+            }
+            #image-row {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                align-items: start;
+                grid-gap: 0.5rem;
+
+                > #logo {
+                    height: 10rem;
+                    width: auto;
+                }
+
+                > #icon {
+                    height: 10rem;
+                }
+            }
+
+            #text-row {
+                font-size: 1rem;
+                margin-top: 3rem;
+            }
+
+            @media only screen and (max-width: 800px) {
+                #image-row {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50%;
+
+                    > #logo {
+                        width: 50%;
+                    }
+
+                    > #icon {
+                        width: 25%;
+                    }
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="image-row">
+                <img id="icon" src="ISO_7010_W001.svg" alt="Image 1" />
+                <img id="logo" src="modern-tools-logo.svg" alt="Image 2" />
+            </div>
+            <div id="text-row">
+                <p>
+                    This page is currently under construction. Check back later!
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
